@@ -12,7 +12,7 @@ namespace Charcoal.Test
 
 		static void Main(string[] args)
 		{
-			using (var game = new Charcoal.Application.Engine("Charcoal test game", 1440, 900))
+			using (var game = new Application.Engine("Charcoal test game", 1440, 900))
 			{
 				game.Run();
 			}

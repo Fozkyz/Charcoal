@@ -109,6 +109,11 @@ namespace Charcoal.Components
 			return _gameObject.GetComponentsInParent<T>();
 		}
 
+		public virtual object Clone()
+		{
+			return MemberwiseClone();
+		}
+
 		public virtual void Dispose() { }
 	}
 }

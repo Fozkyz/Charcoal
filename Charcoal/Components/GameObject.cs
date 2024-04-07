@@ -69,6 +69,10 @@ namespace Charcoal.Components
 
 		public string ID { get; set; }
 
+		public bool IsStatic { get; set; }
+
+		public bool IsPrefab { get; set; }
+
 		public GameObject()
 		{
 			InternalConstructor();
@@ -92,6 +96,8 @@ namespace Charcoal.Components
 
 				_enabled = true;
 				_initialized = false;
+				IsStatic = false;
+				IsPrefab = false;
 
 				ID = "GameObject_" + Guid.NewGuid();
 				Name = string.IsNullOrEmpty(name) ? ID : name;
